@@ -3,7 +3,9 @@
 --   site:      Oracle Database 11g
 --   type:      Oracle Database 11g
 
-
+--4.      Написати PL/SQL код, що створює таблиці та ключі згідно 
+--логічної моделі. Створити необхідні CONSTRAINTS. 
+--Результат роботи зберегти у файлі create.sql
 
 CREATE TABLE museum (
     museum_name  VARCHAR2(256) NOT NULL,
@@ -95,6 +97,7 @@ ALTER TABLE visit
         REFERENCES visitor ( name );
 
 
+ALTER TABLE visitor RENAME COLUMN name TO visitor_name;
 
 -- Oracle SQL Developer Data Modeler Summary Report: 
 -- 
